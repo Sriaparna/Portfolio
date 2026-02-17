@@ -4,6 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sriaparna Sivaraman | Portfolio</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PFB24BZNVW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX'); // <-- Your GA4 Measurement ID
+  </script>
 <script src="https://cdn.tailwindcss.com"></script>
 <!-- Primary Meta Tags -->
 <meta name="title" content="Sriaparna Sivaraman | Data Analyst & Data Scientist Portfolio">
@@ -98,7 +105,9 @@ html {
     <!-- CTA Buttons -->
     <div class="flex items-center gap-4 mt-6">
 
+      
       <a href="#projects"
+         onclick="gtag('event', 'click', { 'event_category': 'CTA', 'event_label': 'View Projects' });"
          class="px-7 py-3 rounded-xl font-semibold 
                 bg-gradient-to-r from-indigo-400/80 to-cyan-400/80 
                 hover:scale-105 transition-all duration-300 shadow-lg">
@@ -106,6 +115,7 @@ html {
       </a>
 
       <a href="#contact"
+         onclick="gtag('event', 'click', { 'event_category': 'CTA', 'event_label': 'Contact Me' });"
          class="px-7 py-3 rounded-xl font-semibold 
                 bg-gradient-to-r from-pink-400/80 to-red-400/80 
                 hover:scale-105 transition-all duration-300 shadow-lg">
