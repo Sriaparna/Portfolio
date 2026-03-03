@@ -300,6 +300,7 @@ html {
   </div>
 </section>
 
+<<<<<<< HEAD
 <!-- PROJECTS -->
 <section id="projects" class="py-24 bg-white/0">
 <div class="container mx-auto px-6">
@@ -343,6 +344,121 @@ Developed a hybrid forecasting system using SARIMA and XGBoost to model seasonal
 </div>
 </section>
 
+=======
+<!-- Projects Section -->
+<section id="projects" class="py-24 bg-white/0">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-semibold text-center mb-12 text-slate-100">Projects</h2>
+
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Project 1 -->
+      <div class="soft-card rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+        <img src="pexels-rdne-7948058.jpg" alt="RFM Customer Segmentation" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h4 class="font-semibold text-lg text-indigo-200 mb-2">RFM Customer Segmentation</h4>
+          <p class="text-slate-300 text-sm mb-3">Segmented customers using Recency, Frequency, and Monetary analysis.</p>
+          <p class="text-slate-400 text-xs italic mb-4">Business Value: Improved ROI & retention</p>
+          <div class="flex gap-3">
+            <a href="https://rfm-segmentation-app-nwrz9ucbay8buow8wjpngp.streamlit.app/" target="_blank"
+               class="flex-1 text-center px-4 py-2 bg-indigo-500/80 text-white rounded-xl hover:bg-indigo-600 transition">
+               Try App
+            </a>
+            <button onclick="openModal('modal1')" 
+                    class="flex-1 px-4 py-2 border border-indigo-500 text-indigo-400 rounded-xl hover:bg-indigo-500/20 transition">
+              Know More
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="soft-card rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+        <img src="Screenshot from 2026-03-03 09-17-21.png" alt="Customer Churn Prediction" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h4 class="font-semibold text-lg text-cyan-200 mb-2">Customer Churn Prediction</h4>
+          <p class="text-slate-300 text-sm mb-3">Predicted high-risk churn customers to support retention strategies.</p>
+          <p class="text-slate-400 text-xs italic mb-4">Business Value: Reduced revenue loss by 12%</p>
+          <div class="flex gap-3">
+            <a href="https://churn-analysis-gmcduacdayujnetjlnqcsw.streamlit.app/" target="_blank"
+               class="flex-1 text-center px-4 py-2 bg-cyan-500/80 text-white rounded-xl hover:bg-cyan-600 transition">
+               Try App
+            </a>
+            <button onclick="openModal('modal2')" 
+                    class="flex-1 px-4 py-2 border border-cyan-500 text-cyan-400 rounded-xl hover:bg-cyan-500/20 transition">
+              Know More
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="soft-card rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+        <img src="Screenshot from 2026-03-03 09-22-27.png" alt="Electricity Consumption Forecasting" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h4 class="font-semibold text-lg text-pink-200 mb-2">Electricity Consumption Forecasting</h4>
+          <p class="text-slate-300 text-sm mb-3">Forecasted electricity demand using SARIMA & XGBoost hybrid model.</p>
+          <p class="text-slate-400 text-xs italic mb-4">Business Value: Optimized energy planning</p>
+          <div class="flex gap-3">
+            <a href="https://energy-demand-forecasting-vsn3es7wupxnwqupyhfghx.streamlit.app/" target="_blank"
+               class="flex-1 text-center px-4 py-2 bg-pink-500/80 text-white rounded-xl hover:bg-pink-600 transition">
+               Try App
+            </a>
+            <button onclick="openModal('modal3')" 
+                    class="flex-1 px-4 py-2 border border-pink-500 text-pink-400 rounded-xl hover:bg-pink-500/20 transition">
+              Know More
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Modals -->
+<div id="modal1" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
+  <div class="bg-gray-900 text-white p-8 rounded-2xl max-w-lg w-full relative">
+    <button onclick="closeModal('modal1')" class="absolute top-4 right-4 text-gray-400 hover:text-white">&times;</button>
+    <h3 class="text-2xl font-bold text-indigo-200 mb-4">RFM Customer Segmentation</h3>
+    <p class="mb-3">Segmented 50,000+ customers using RFM analysis to identify high-value, at-risk, and churn-prone groups.</p>
+    <p class="mb-3"><strong>Tech Stack:</strong> Python, Pandas, Scikit-learn, SQL, Streamlit</p>
+    <p class="mb-3"><strong>Business Impact:</strong> Improved ROI, retention & campaign efficiency</p>
+  </div>
+</div>
+
+<div id="modal2" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
+  <div class="bg-gray-900 text-white p-8 rounded-2xl max-w-lg w-full relative">
+    <button onclick="closeModal('modal2')" class="absolute top-4 right-4 text-gray-400 hover:text-white">&times;</button>
+    <h3 class="text-2xl font-bold text-cyan-200 mb-4">Customer Churn Prediction</h3>
+    <p class="mb-3">Built a Random Forest model to predict churn for 20,000+ customers, integrated into a business dashboard for retention strategies.</p>
+    <p class="mb-3"><strong>Tech Stack:</strong> Python, Scikit-learn, Pandas, SQL, Streamlit</p>
+    <p class="mb-3"><strong>Business Impact:</strong> Reduced potential revenue loss by proactively identifying high-risk customers, lowering churn by 12%.</p>
+  </div>
+</div>
+
+<div id="modal3" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
+  <div class="bg-gray-900 text-white p-8 rounded-2xl max-w-lg w-full relative">
+    <button onclick="closeModal('modal3')" class="absolute top-4 right-4 text-gray-400 hover:text-white">&times;</button>
+    <h3 class="text-2xl font-bold text-pink-200 mb-4">Electricity Consumption Forecasting</h3>
+    <p class="mb-3">Developed a hybrid forecasting system using SARIMA & XGBoost to model seasonality, weather patterns, and holiday effects for accurate electricity demand prediction.</p>
+    <p class="mb-3"><strong>Tech Stack:</strong> Python, Statsmodels, XGBoost, Pandas, Streamlit</p>
+    <p class="mb-3"><strong>Business Impact:</strong> Optimized energy planning & operations, reducing cost and improving efficiency.</p>
+  </div>
+</div>
+
+<script>
+function openModal(id){
+  document.getElementById(id).classList.remove('hidden');
+  document.getElementById(id).classList.add('flex');
+}
+function closeModal(id){
+  document.getElementById(id).classList.remove('flex');
+  document.getElementById(id).classList.add('hidden');
+}
+</script>
+
+>>>>>>> 0676b6f (Updated portfolio: projects section and experience)
 <!-- CERTIFICATIONS -->
 <section class="py-24">
 <div class="container mx-auto px-6">
@@ -534,4 +650,8 @@ function copyEmail(){
 
 
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 0676b6f (Updated portfolio: projects section and experience)
